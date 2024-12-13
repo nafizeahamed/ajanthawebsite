@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  color: white; /* White text for contrast */
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background 0.3s ease-in-out; /* Smooth background transition */
+}
+
+header:hover {
+  background: rgba(3, 94, 139, 0.9); /* Changes to a teal shade on hover */
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: color 0.3s ease-in-out; /* Smooth text color transition */
+}
+
+
+.logo {
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url('images/istockphoto-1067775012-612x612.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* General Styles for Product Section */
+.products {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center; /* Ensures all cards are center-aligned */
+  padding-left: 20px ;
+  padding-right: 20px ;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centers content inside the card */
+  width: 100%; /* Ensures consistent card size */
+  max-width: 250px; /* Optional: Limits card width */
+}
+
+.product-card:hover{
+ z-index: 100;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 50%;
+  border-radius: 8px;
+   margin-bottom: 15px;
+}
+
+/*.test {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333;
+  text-align: center; *//* Ensures titles are aligned *//*
+  font-weight: bold;
+  padding-top: 30px;
+  margin-inline-end: 10px;
+}*/
+
+.product-card h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333;
+  text-align: center; /* Ensures titles are aligned */
+  font-weight: bold;
+  padding-top: 30px;
+  margin-inline-end: 10px;
+}
+
+
+
+.view-more {
+  margin-top: 20px;
+}
+
+.view-more .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #027a33; /* Green background */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.view-more .btn:hover {
+  background: #004d1a; /* Darker green on hover */
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(
+      140deg,
+      rgba(3, 94, 139, 0.93),
+      rgba(0, 203, 169, 0.73),
+      rgba(0, 225, 80, 0.04)
+    ),
+    linear-gradient(72deg, transparent, rgba(0, 225, 117, 0.64));
+  color: white; /* Text color for readability */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+}
+
+footer h3 {
+  font-size: 1.5em;
+}
+
+footer p {
+  margin: 5px 0;
+}
