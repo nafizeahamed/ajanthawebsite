@@ -106,6 +106,7 @@ header nav ul li a:hover {
   text-align: center; /* Centers content inside the card */
   width: 100%; /* Ensures consistent card size */
   max-width: 250px; /* Optional: Limits card width */
+  height: auto;
 }
 
 .product-card:hover{
@@ -114,7 +115,7 @@ header nav ul li a:hover {
 
 .product-card img {
   max-width: 100%;
-  height: 50%;
+  height: 200px;
   border-radius: 8px;
    margin-bottom: 15px;
 }
