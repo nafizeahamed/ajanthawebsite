@@ -31,7 +31,6 @@ header a {
   transition: color 0.3s ease-in-out; /* Smooth text color transition */
 }
 
-
 .logo {
   font-weight: bold;
   font-family: 'Arial', sans-serif;
@@ -93,8 +92,8 @@ header nav ul li a:hover {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   justify-items: center; /* Ensures all cards are center-aligned */
-  padding-left: 20px ;
-  padding-right: 20px ;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .product-card {
@@ -107,28 +106,21 @@ header nav ul li a:hover {
   width: 100%; /* Ensures consistent card size */
   max-width: 250px; /* Optional: Limits card width */
   height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
-.product-card:hover{
- z-index: 100;
+.product-card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card on hover */
+  z-index: 100;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
   max-width: 100%;
   height: 200px;
   border-radius: 8px;
-   margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
-/*.test {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #333;
-  text-align: center; *//* Ensures titles are aligned *//*
-  font-weight: bold;
-  padding-top: 30px;
-  margin-inline-end: 10px;
-}*/
 
 .product-card h3 {
   font-size: 1.2em;
@@ -139,8 +131,6 @@ header nav ul li a:hover {
   padding-top: 30px;
   margin-inline-end: 10px;
 }
-
-
 
 .view-more {
   margin-top: 20px;
@@ -183,4 +173,43 @@ footer h3 {
 
 footer p {
   margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 50px 20px;
+    font-size: 1.2em;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero h2 {
+    font-size: 1.5em;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+    gap: 10px;
+  }
+
+  .product-card {
+    max-width: 100%; /* Full width on small screens */
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
 }
