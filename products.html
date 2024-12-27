@@ -22,6 +22,11 @@
   <!-- Products Section -->
   <section class="products">
     <h2>Our Full Product Range</h2>
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search for products..." />
+    </div>
+
     <div class="product-grid">
       <div class="product-card">
         <img src="images/wire-mesh.png" alt="Wire Mesh">
@@ -301,6 +306,14 @@
         <img src="images/pvc-annakudai.jpeg" alt="PVC Annakudai">
         <h3>PVC Annakudai</h3>
       </div>
+      <div class="product-card">
+        <img src="images/centering-lever.jpeg" alt="Centering Lever">
+        <h3>Centering Lever</h3>
+      </div>
+       <div class="product-card">
+        <img src="images/iron-uli.jpg" alt="Iron Uli">
+        <h3>Iron Uli (Chisel)</h3>
+      </div>
 
       <!-- Add more products as needed -->
     </div>
@@ -313,6 +326,23 @@
     <p>📍 No. 8, A.P. Nagar, Tharanallur, Trichy - 8</p>
     <p>&copy; 2024 Ajantha Trading Company</p>
   </footer>
+
+<script>
+  document.getElementById('search-bar').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    const products = document.querySelectorAll('.product-card');
+
+    products.forEach(product => {
+      const productName = product.querySelector('h3').textContent.toLowerCase();
+      if (productName.includes(query)) {
+        product.style.display = 'block'; // Show the product
+      } else {
+        product.style.display = 'none'; // Hide the product
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>

@@ -214,3 +214,23 @@ footer p {
     font-size: 0.9rem;
   }
 }
+.search-container {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar:focus {
+  outline: none;
+  border-color: #027a33; /* Green color for focus */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
