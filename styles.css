@@ -20,7 +20,7 @@ header {
 }
 
 header:hover {
-  background: rgba(3, 94, 139, 0.9); /* Changes to a teal shade on hover */
+    background: linear-gradient(135deg, #4a5568, #2c5282);
 }
 
 header a {
@@ -208,12 +208,14 @@ footer p {
 
   .product-card {
     max-width: 100%; /* Full width on small screens */
+    transition: all 0.3s ease-in-out;
   }
 
   footer {
     font-size: 0.9rem;
   }
 }
+/* search bar style */
 .search-container {
   margin: 20px auto;
   max-width: 600px;
@@ -234,3 +236,32 @@ footer p {
   border-color: #027a33; /* Green color for focus */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+/* filter style */
+.filter-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  background: linear-gradient(135deg, #4a5568, #2c5282); /* Muted Blue Gray to Cool Slate Blue */
+  color: #ffffff; /* White Text */
+  border: none; /* Clean look */
+  padding: 10px 20px; /* Comfortable button size */
+  border-radius: 5px; /* Slightly rounded corners for professionalism */
+  font-size: 1rem; /* Modern font size */
+  font-weight: 600; /* Semi-bold for elegance */
+  cursor: pointer; /* Pointer cursor */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Soft shadow for subtle depth */
+}
+
+.filter-btn:hover {
+  background: linear-gradient(135deg, #2c5282, #2a4365); /* Slightly darker on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+
+
+
+
